@@ -13,13 +13,8 @@ screen.bgcolor(SCREEN_BG_COLOR)
 screen.title(SCREEN_TITLE)
 screen.tracer(0)
 
-# # create and move a paddle
-paddle_right = Paddle()
-paddle_right.goto(350, 0)
-
-# # create another paddle
-paddle_left = Paddle()
-paddle_left.goto(-350, 0)
+paddle_right = Paddle((350, 0))
+paddle_left = Paddle((-350, 0))
 
 # # create the ball and move it
 # ball = Ball()
