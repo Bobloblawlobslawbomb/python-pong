@@ -9,6 +9,7 @@ SCREEN_HEIGHT = 600
 SCREEN_BG_COLOR = "black"
 SCREEN_TITLE = "Python Pong"
 
+
 screen = Screen()
 screen.setup(width=SCREEN_WIDTH, height=SCREEN_HEIGHT)
 screen.bgcolor(SCREEN_BG_COLOR)
