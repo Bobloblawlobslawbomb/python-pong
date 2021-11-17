@@ -1,10 +1,13 @@
-from turtle import Turtle, update
+from turtle import Turtle
+
+SCORE_COLOR = "white"
+SCORE_FONT = ("Courier", 80, "normal")
 
 
 class ScoreBoard(Turtle):
     def __init__(self):
         super().__init__()
-        self.color("white")
+        self.color(SCORE_COLOR)
         self.penup()
         self.hideturtle()
         self.left_score = 0
@@ -17,12 +20,12 @@ class ScoreBoard(Turtle):
         self.write(
             self.left_score,
             align="left",
-            font=("Courier", 80, "normal"))
+            font=SCORE_FONT)
         self.goto(100, 200)
         self.write(
             self.right_score,
             align="right",
-            font=("Courier", 80, "normal"))
+            font=SCORE_FONT)
 
     def left_point(self):
         self.left_score += 1
