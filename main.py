@@ -42,13 +42,9 @@ while game_on:
     if ball.xcor() > 380:
         scoreboard.left_point()
         ball.reset_position()
-        ball.bounce_paddle()
-        ball.bounce_wall()
 
     if ball.xcor() < -380:
         scoreboard.right_point()
         ball.reset_position()
-        ball.bounce_paddle()
-        ball.bounce_wall()
 
 screen.exitonclick()
